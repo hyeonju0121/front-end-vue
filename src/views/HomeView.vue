@@ -1,18 +1,30 @@
 <template>
-  <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="card">
+    <div class="card-header">HomeView</div>
+      <div class="card-body">
+        
+        <div class="home">
+          <img alt="Vue logo" src="../assets/logo.png">
+          <HelloWorld msg="Welcome to Your Vue.js App"/>
+        </div>
+
+      </div>
   </div>
 </template>
 
-<script>
-// @ is an alias to /src
+<script setup>
+// @ -> /src 를 의미한다. 
 import HelloWorld from '@/components/HelloWorld.vue'
 
-export default {
-  name: 'HomeView',
-  components: {
-    HelloWorld
-  }
-}
 </script>
+
+<style scoped>
+.home {
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+}
+
+</style>
