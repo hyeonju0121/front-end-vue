@@ -1,14 +1,10 @@
 <template>
+    <!--template 에서 개별 속성 접근 -->
     <div class="card" :id="$attrs.id">
         <div class="card-header">UIComponentB</div>
         <div class="card-body">
-            <div class="mb-2" :class="$attrs.myclass" :style="$attrs.mystyle"
+            <div class="mb-2" :class="$attrs.class" :style="$attrs.style"
                     @click="$attrs.onClick">
-                Contents
-            </div>
-
-            <div :class="$attrs.myclass" :style="$attrs.mystyle"
-                    @click="$emit('click')">
                 Contents
             </div>
 
@@ -24,17 +20,18 @@
 import { defineOptions, useAttrs } from 'vue';
 
 defineOptions({
-    // fallthrough 속성을 비활성화
+    // fallthrough 속성을 비활성화 (전체 속성을 fallthrough 하지 않음)
     inheritAttrs: false
 });
 
+// 코드에서 개별 속성 접근
 const attrs = useAttrs();
 
 function handleBtn1() {
     // 속성으로 전달된 값 얻기
     console.log(attrs.id);
-    console.log(attrs.myclass);
-    console.log(attrs.mystyle);
+    console.log(attrs.class);
+    console.log(attrs.style);
 }
 
 function handleBtn2() {
