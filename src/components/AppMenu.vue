@@ -117,6 +117,27 @@
                 </div>
             </div>
         </div>
+
+        <!-- 4 --------------------------------------------------------->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse4" aria-expanded="true" aria-controls="collapse4">
+                    Ch04. EventHandling & Watch
+                </button>
+            </h2>
+            <div id="collapse4" class="accordion-collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <RouterLink to="/Ch04EventHandlingWatch/Exam01EventHandling" class="nav-link">
+                                Exam01EventHandling : 이벤트 핸들링 </RouterLink>
+                        </li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
     </div>
 </template>
 
