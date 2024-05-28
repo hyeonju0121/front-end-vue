@@ -63,7 +63,7 @@
             <h2 class="accordion-header">
                 <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapse3" aria-expanded="true" aria-controls="collapse3">
-                    Ch03. DataBinding
+                    Ch03. Data Binding
                 </button>
             </h2>
             <div id="collapse3" class="accordion-collapse" data-bs-parent="#accordionExample">
@@ -136,6 +136,26 @@
                         <li class="nav-item">
                             <RouterLink to="/Ch04EventHandlingWatch/Exam02Watch" class="nav-link">
                                 Exam02Watch : 상태 데이터 변경 감시 </RouterLink>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- 5 --------------------------------------------------------->
+        <div class="accordion-item">
+            <h2 class="accordion-header">
+                <button class="accordion-button fw-bold" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapse5" aria-expanded="true" aria-controls="collapse5">
+                    Ch05. Data Delivery
+                </button>
+            </h2>
+            <div id="collapse5" class="accordion-collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <RouterLink to="/Ch05DataDelivery/Exam01Props" class="nav-link">
+                                Exam01Props : 부모에서 자식으로 (prop 방식) </RouterLink>
                         </li>
                     </ul>
                 </div>
