@@ -131,9 +131,12 @@
                     <ul class="nav flex-column">
                         <li class="nav-item">
                             <RouterLink to="/Ch04EventHandlingWatch/Exam01EventHandling" class="nav-link">
-                                Exam01EventHandling : 이벤트 핸들링 </RouterLink>
+                                Exam01EventHandling : 이벤트 처리 </RouterLink>
                         </li>
-                        
+                        <li class="nav-item">
+                            <RouterLink to="/Ch04EventHandlingWatch/Exam02Watch" class="nav-link">
+                                Exam02Watch : 상태 데이터 변경 감시 </RouterLink>
+                        </li>
                     </ul>
                 </div>
             </div>
