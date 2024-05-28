@@ -7,9 +7,12 @@
             <button class="btn btn-info btn-sm" @click="showDialogC">로그인 다이얼로그</button>
         </div>
 
+        <!-- (fallthrough 적용) 
+        부트스트랩에서 다이얼로그는 고유한 id를 필수로 갖고 있어야 함 -->
         <DialogA id="dialogA"/>
+        <!--id 는 항상 modal 루트 태그에 적용되야함-->
         <DialogB id="dialogB" @close="hideDialogB"/>
-        <DialogC id="dialogC"/>
+        <DialogC id="dialogC" @close="hideDialogC"/>
     </div>
 </template>
 
@@ -46,6 +49,10 @@ function showDialogC() {
 
 function hideDialogB() {
     modalDialogB.hide();
+}
+
+function hideDialogC() {
+    modalDialogC.hide();
 }
 
 </script>

@@ -1,6 +1,6 @@
 <template>
     <DialogTemplate>
-        <!--템플릿 <slot> 자리에 들어갈 내용 저으이-->
+        <!--템플릿 <slot> 자리에 들어갈 내용 정의-->
         <template v-slot:header>
             로그인
         </template>
@@ -17,10 +17,11 @@
         </template>
 
         <template v-slot:footer>
-            <button class="btn btn-info btn-sm me-2">로그인</button>
+            <button class="btn btn-info btn-sm me-2" @click="handleLogin">로그인</button>
             <button type="button" class="btn btn-secondary btn-sm" data-bs-dismiss="modal">닫기</button>
         </template>
-    
+        
+
     </DialogTemplate>
 </template>
 
@@ -28,10 +29,21 @@
 import { ref } from 'vue';
 import DialogTemplate from './DialogTemplate.vue';
 
+const emit = defineEmits(["close"]);
+
 const inputData = ref({
     email: "",
     password: ""
 });
+
+function handleLogin() {
+    // 사용자가 입력한 내용을 일반 객체로 만들기
+    console.log("로그인 버튼 클릭");
+    console.log(JSON.parse(JSON.stringify(inputData.value)));
+    // close 이벤트 발생 시키기 
+    emit('close');
+}
+
 </script>
 
 <style scoped>

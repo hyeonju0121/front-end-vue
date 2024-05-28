@@ -1,4 +1,5 @@
 <template>
+    <!-- 기본 템플릿 사용-->
     <DialogTemplate/>
 </template>
 

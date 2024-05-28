@@ -10,7 +10,7 @@
         </template>
 
         <template v-slot:footer>
-            <button class="btn btn-info btn-sm" @click="confirm">확인</button>
+            <button class="btn btn-info btn-sm" @click="emit('close')">확인</button>
         </template>
     
     </DialogTemplate>
@@ -19,10 +19,8 @@
 <script setup>
 import DialogTemplate from './DialogTemplate.vue';
 
+const emit = defineEmits(["close"]);
 
-function confirm() {
-    
-}
 </script>
 
 <style scoped>
