@@ -3,7 +3,7 @@ import HomeView from '../views/HomeView.vue';
 import Ch02ComponentRouting from '@/router/Ch02ComponentRouting';
 import Ch03DataBinding from '@/router/Ch03DataBinding';
 import Ch04EventHandling from '@/router/Ch04EventHandlingWatch';
-import Ch05DataDelivery from '@/router/Ch05DataDelivery';
+import Ch05DataDelivery from '@/router/Ch05DataDelivery'
 import Exam01View from '@/views/Ch02ComponentRouting/Exam01View.vue'
 import Exam04view from '@/views/Ch02ComponentRouting/Exam04View'
 import Exam05view from '@/views/Ch02ComponentRouting/Exam05View'

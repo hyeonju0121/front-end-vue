@@ -161,6 +161,10 @@
                             <RouterLink to="/Ch05DataDelivery/Exam02EventEmit" class="nav-link">
                                 Exam02EventEmit : 자식에서 부모로 (event 방식) </RouterLink>
                         </li>
+                        <li class="nav-item">
+                            <RouterLink to="/Ch05DataDelivery/Exam03ProvideInject" class="nav-link">
+                                Exam03ProvideInject : 전체 하위 컴포넌트에게 데이터 제공 </RouterLink>
+                        </li>
                     </ul>
                 </div>
             </div>
