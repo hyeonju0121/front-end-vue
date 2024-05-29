@@ -3,7 +3,8 @@ import HomeView from '../views/HomeView.vue';
 import Ch02ComponentRouting from '@/router/Ch02ComponentRouting';
 import Ch03DataBinding from '@/router/Ch03DataBinding';
 import Ch04EventHandling from '@/router/Ch04EventHandlingWatch';
-import Ch05DataDelivery from '@/router/Ch05DataDelivery'
+import Ch05DataDelivery from '@/router/Ch05DataDelivery';
+import Ch06LifecycleHook from '@/router/Ch06LifecycleHook';
 import Exam01View from '@/views/Ch02ComponentRouting/Exam01View.vue'
 import Exam04view from '@/views/Ch02ComponentRouting/Exam04View'
 import Exam05view from '@/views/Ch02ComponentRouting/Exam05View'
@@ -22,7 +23,8 @@ const routes = [
   ...Ch02ComponentRouting,    // 구조분해 해서 배열을 넣어줌
   ...Ch03DataBinding,
   ...Ch04EventHandling,
-  ...Ch05DataDelivery
+  ...Ch05DataDelivery,
+  ...Ch06LifecycleHook
   // },
   // {
   //   path: '/Ch02ComponentRouting/Exam01View',
